@@ -115,3 +115,15 @@
     padding-top: 20px;
     overflow: scroll;
   }
+
+.Titolo{
+  position: fixed;
+  left: 50%;
+  top: 200px;
+}
+
+.Testo{
+  position: fixed;
+  left: 25%;
+  top: 270px;
+}
