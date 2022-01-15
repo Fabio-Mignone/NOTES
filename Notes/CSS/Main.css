@@ -46,13 +46,21 @@
     color: #f1f1f1;
   }
   
-  .main {
-    margin-left: 160px;
-    font-size: 28px;
-    padding: 0px 10px;
-  }
-  
   @media screen and (max-height: 450px) {
     .sidenav {padding-top: 15px;}
     .sidenav a {font-size: 18px;}
+  }
+
+  /* content section */
+
+  .content{
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 100px;
+    left: 400px;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 20px;
+    overflow: scroll;
   }
