@@ -9,13 +9,15 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
-        <div class="header">
-            <h1 class="notelogo">Notes</h1>
-        </div>
-        <section>
+        <section name="intestazione">
+            <div class="header">
+                <h1 class="notelogo">Notes</h1>
+            </div>
+        </section>
+        <section name="side">
             <div class="btnzone">
-                <button class="BtnAdd">Nuova nota</button>
-                <button class="BtnRmv">Cancella nota</button>
+                <input type="button" class="BtnAdd" value="Nuova nota">
+                <input type="button" class="BtnRmv" value="Cancella nota">
             </div>
             <div class="mynotes">
                 <h2 class="mynot">Le Tue Note</h2>
@@ -23,7 +25,9 @@
             <div class="sidenav">
             </div>
         </section>
-        <div class="content">        
-        </div>
+        <section name="maincontent">
+            <div class="content">        
+            </div>
+        </section>
     </body>
 </html>
