@@ -108,9 +108,9 @@
   /* content section */
 
 .content{
-  height: 100%;
-  width: 100%;
   position: fixed;
+  width: 1120px;
+  height: 100%;
   top: 100px;
   left: 400px;
   background-color: white;
