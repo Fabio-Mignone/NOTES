@@ -174,3 +174,15 @@
   text-shadow: black .05em .05em 0,
                white .08em .08em 0;
 }
+
+/* footer */
+
+.footer{
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  background-color: #555555;
+  height: 100px;
+  width: 100%;
+  clear: both;
+}
