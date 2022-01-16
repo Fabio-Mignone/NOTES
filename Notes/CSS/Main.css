@@ -175,6 +175,24 @@
                white .08em .08em 0;
 }
 
+/* sfondi */
+
+.sfondi{
+  position: fixed;
+  top: 150px;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  background-color: black;
+  text-align: center;
+}
+
+.sfondotext{
+  color: white;
+  font-size: medium;
+  font-family: 'Prompt', sans-serif;
+}
+
 /* footer */
 
 .footer{
