@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cantata+One&display=swap');
 
 /* header */
 
@@ -22,11 +23,11 @@
                  white .08em .08em 0;
 }
 
-/* sidebar */
+/* sidebar left*/
 
 .btnzone{
   position: fixed;
-  top: 100px;
+  top: 150px;
   left: 0;
   width: 400px;
   height: 100%;
@@ -40,7 +41,7 @@
 .BtnAdd{
   background-color: black;
   color: white;
-  border: 2px solid #555555;
+  border: 2px solid rgb(0, 255, 0);
   border-radius: 10px;
   width: 100px;
   height: 25px;
@@ -50,12 +51,13 @@
 .BtnAdd:hover{
   background-color: rgb(0, 255, 0);
   color: black;
+  border: 2px solid #555555;
 }
 
 .BtnRmv{
   background-color: black;
   color: white;
-  border: 2px solid #555555;
+  border: 2px solid rgb(255, 0, 0);
   border-radius: 10px;
   width: 100px;
   height: 25px;
@@ -65,11 +67,12 @@
 .BtnRmv:hover{
   background-color: rgb(255, 0, 0);
   color: black;
+  border: 2px solid #555555;
 }
 
 .mynotes{
   position: fixed;
-  top: 150px;
+  top: 100px;
   left: 0;
   width: 400px;
   height: 100%;
@@ -104,26 +107,70 @@
 
   /* content section */
 
-  .content{
-    height: 100%;
-    width: 100%;
-    position: fixed;
-    top: 100px;
-    left: 400px;
-    background-color: white;
-    overflow-x: hidden;
-    padding-top: 20px;
-    overflow: scroll;
-  }
+.content{
+  height: 100%;
+  width: 100%;
+  position: fixed;
+  top: 100px;
+  left: 400px;
+  background-color: white;
+  overflow-x: hidden;
+  padding-top: 20px;
+  overflow: scroll;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;
+}
+
+.content::-webkit-scrollbar{
+  display: none;
+}
 
 .Titolo{
   position: fixed;
   left: 50%;
   top: 200px;
+  font-family: 'Cantata One', serif;
 }
 
 .Testo{
   position: fixed;
   left: 25%;
   top: 270px;
+  font-family: 'Cantata One', serif;
+}
+
+.NoSelectedNote{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  text-align: center;  
+  font-family: 'Cantata One', serif;
+}
+
+/* sidebar right*/
+
+.toolsection{
+  position: fixed;
+  top: 150px;
+  right: 0px;
+  width: 400px;
+  height: 100%;
+  background-color: black;
+}
+
+.tool{
+  position: fixed;
+  top: 100px;
+  right: 0;
+  width: 400px;
+  height: 100%;
+  background-color: black;
+  text-align: center;
+}
+
+.Tooltext{
+  color: white;
+  font-family: 'Lobster', cursive;
+  text-shadow: black .05em .05em 0,
+               white .08em .08em 0;
 }
