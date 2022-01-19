@@ -237,6 +237,16 @@
   text-align: center;
 }
 
+.testocolorato{
+  position: fixed;
+  right: 0;
+  top: 270px;
+  width: 400px;
+  height: 100%;
+  background-color: black;
+  text-align: center;
+}
+
 /* footer */
 
 .footer{
