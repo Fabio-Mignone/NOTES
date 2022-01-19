@@ -193,6 +193,50 @@
   font-family: 'Prompt', sans-serif;
 }
 
+.blue{
+  float: left;
+  border: solid 4px #555555;
+  border-radius: 8px;
+  width: 20%;
+  margin-left: 10px;
+  height: 40px;
+  background-color: blue;
+  text-align: center;
+}
+
+.rosso{
+  float: left;
+  border: solid 4px #555555;
+  border-radius: 8px;
+  width: 20%;
+  margin-left: 10px;
+  height: 40px;
+  background-color: red;
+  text-align: center;
+}
+
+.verde{
+  float: left;
+  border: solid 4px #555555;
+  border-radius: 8px;
+  width: 20%;
+  margin-left: 10px;
+  height: 40px;
+  background-color: green;
+  text-align: center;
+}
+
+.bianco{
+  float: left;
+  border: solid 4px #555555;
+  border-radius: 8px;
+  width: 20%;
+  margin-left: 10px;
+  height: 40px;
+  background-color: white;
+  text-align: center;
+}
+
 /* footer */
 
 .footer{
