@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cantata+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,500&display=swap');
 
 /* header */
 
@@ -237,10 +238,58 @@
   text-align: center;
 }
 
+.arancione{
+  float: left;
+  border: solid 4px #555555;
+  border-radius: 8px;
+  width: 20%;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 40px;
+  background-color: orange;
+  text-align: center;
+}
+
+.giallo{
+  float: left;
+  border: solid 4px #555555;
+  border-radius: 8px;
+  width: 20%;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 40px;
+  background-color: yellow;
+  text-align: center;
+}
+
+.viola{
+  float: left;
+  border: solid 4px #555555;
+  border-radius: 8px;
+  width: 20%;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 40px;
+  background-color: purple;
+  text-align: center;
+}
+
+.marrone{
+  float: left;
+  border: solid 4px #555555;
+  border-radius: 8px;
+  width: 20%;
+  margin-left: 10px;
+  margin-top: 10px;
+  height: 40px;
+  background-color: brown;
+  text-align: center;
+}
+
 .testocolorato{
   position: fixed;
   right: 0;
-  top: 270px;
+  top: 320px;
   width: 400px;
   height: 100%;
   background-color: black;
@@ -479,4 +528,16 @@ box-shadow: 0 0 250px 20px #42F2A1;
 }
 
 to { box-shadow: 0 0 100px 15px #F4F6AD; }
+}
+
+.textfooter{
+  position: fixed;
+  left: 50px;
+  bottom: 30px;
+  text-align: justify;
+}
+
+.textft{
+  color: white;
+  font-family: 'Josefin Slab', serif;
 }
