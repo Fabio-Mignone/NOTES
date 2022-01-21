@@ -533,11 +533,22 @@ to { box-shadow: 0 0 100px 15px #F4F6AD; }
 .textfooter{
   position: fixed;
   left: 50px;
-  bottom: 30px;
+  bottom: 20px;
+  text-align: justify;
+}
+
+.textfooter2{
+  position: fixed;
+  right: 50px;
+  bottom: 20px;
   text-align: justify;
 }
 
 .textft{
   color: white;
   font-family: 'Josefin Slab', serif;
+}
+
+.link{
+  color: white;
 }
