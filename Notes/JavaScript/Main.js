@@ -27,4 +27,11 @@ function ChangeContent(){
     elementtitle.setAttribute("id", "titleofnote");
     elementtitle.textContent += "Inserisci il titolo della tua nota";
     elementtitle.contentEditable = true;
+
+    var elementtext = document.createElement("P");
+    document.getElementById("content").appendChild(elementtext);
+    elementtext.classList.add("testonota");
+    elementtext.setAttribute("id", "textofnote");
+    elementtext.textContent += "Inserisci il testo della tua nota";
+    elementtext.contentEditable = true;
 }

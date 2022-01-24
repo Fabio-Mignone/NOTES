@@ -158,6 +158,16 @@
   font-family: 'Oswald', sans-serif;
 }
 
+.testonota{
+  position: fixed;
+  top: 220px;
+  left: 23%;
+  width: 1030px;
+  height: 700px;
+  text-align: left;
+  font-family: 'Oswald', sans-serif;
+}
+
 /* sidebar right*/
 
 .toolsection{
