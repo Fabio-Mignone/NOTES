@@ -4,6 +4,7 @@ $(document).ready(function() {
 
 function AddingNote(){
     var tempo = Tempo();
+    ChangeContent();
 }
 
 
@@ -18,5 +19,12 @@ function Tempo(){
 }
 
 function ChangeContent(){
-    
+    var nocontentselected = document.getElementById ("notextselected");
+    nocontentselected.remove();
+    var elementtitle = document.createElement("P");
+    document.getElementById("content").appendChild(elementtitle);
+    elementtitle.classList.add("titolonota");
+    elementtitle.setAttribute("id", "titleofnote");
+    elementtitle.textContent += "Inserisci il titolo della tua nota";
+    elementtitle.contentEditable = true;
 }

@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Prompt:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cantata+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
 /* header */
 
@@ -146,6 +147,15 @@
   left: 36%;
   text-align: center;  
   font-family: 'Cantata One', serif;
+}
+
+.titolonota{
+  position: fixed;
+  top: 150px;
+  left: 45%;
+  width: auto;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
 }
 
 /* sidebar right*/
