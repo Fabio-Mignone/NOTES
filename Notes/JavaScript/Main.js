@@ -5,6 +5,7 @@ $(document).ready(function() {
 function AddingNote(){
     var tempo = Tempo();
     ChangeContent();
+    //CreateNoteOnLeft(tempo);
 }
 
 
@@ -18,9 +19,12 @@ function Tempo(){
     return dateTime;
 }
 
-function ChangeContent(){
+function RemovePlaceHolder(){
     var nocontentselected = document.getElementById ("notextselected");
     nocontentselected.remove();
+}
+
+function changetext(){
     var elementtitle = document.createElement("P");
     document.getElementById("content").appendChild(elementtitle);
     elementtitle.classList.add("titolonota");
@@ -34,4 +38,25 @@ function ChangeContent(){
     elementtext.setAttribute("id", "textofnote");
     elementtext.textContent += "Inserisci il testo della tua nota";
     elementtext.contentEditable = true;
+}
+
+function ChangeContent(){
+    var placeholder = document.getElementById ("notextselected");
+    if(typeof(placeholder) != 'undefined' && placeholder != null){
+        RemovePlaceHolder();
+        changetext();
+    }
+    else{
+        changetext();
+    }
+}
+
+function CreateNoteOnLeft(tempo) {
+    var noteonleft = document.createElement("div");    
+    noteonleft.classList.add("notaonleft");
+    noteonleft.setAttribute("id" , "noteonleft");
+    document.getElementById("sidenav").appendChild(noteonleft);
+    var texttitle = "Titolo Della Nota";
+    document.getElementById("noteonleft").appendChild(texttitle);
+    document.getElementById("noteonleft").appendChild(tempo);
 }
