@@ -222,6 +222,7 @@
   margin-left: 10px;
   height: 40px;
   background-color: blue;
+  color: white;
   text-align: center;
 }
 
@@ -302,7 +303,8 @@
   margin-left: 10px;
   margin-top: 10px;
   height: 40px;
-  background-color: brown;
+  background-color: black;
+  color: white;
   text-align: center;
 }
 
