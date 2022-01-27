@@ -168,6 +168,15 @@
   font-family: 'Oswald', sans-serif;
 }
 
+.notaonleft{
+  background-color: rgb(75, 75, 75);
+  height: 70px;
+  width: 400px;
+  text-align: center;
+  color: white;
+  font-size: 25px;
+}
+
 /* sidebar right*/
 
 .toolsection{

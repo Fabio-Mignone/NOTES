@@ -5,7 +5,12 @@ $(document).ready(function() {
 function AddingNote(){
     var tempo = Tempo();
     ChangeContent();
-    //CreateNoteOnLeft(tempo);
+    CreateNoteOnLeft(tempo);
+    var intervalId = window.setInterval(function(){
+        var titolo = document.getElementById("titleofnote").value;
+        CreateNoteOnLeft(tempo , titolo);
+      }, 5000);
+        
 }
 
 
@@ -51,12 +56,10 @@ function ChangeContent(){
     }
 }
 
-function CreateNoteOnLeft(tempo) {
-    var noteonleft = document.createElement("div");    
-    noteonleft.classList.add("notaonleft");
-    noteonleft.setAttribute("id" , "noteonleft");
-    document.getElementById("sidenav").appendChild(noteonleft);
-    var texttitle = "Titolo Della Nota";
-    document.getElementById("noteonleft").appendChild(texttitle);
-    document.getElementById("noteonleft").appendChild(tempo);
+function CreateNoteOnLeft(tempo , titolo) {
+    var nota = document.createElement("P"); 
+    document.getElementById("notes").appendChild(nota);  
+    nota.classList.add("notaonleft");
+    nota.setAttribute("id" , "notaleft");
+    nota.textContent += titolo + " " + tempo;
 }
