@@ -3,14 +3,8 @@ $(document).ready(function() {
 });
 
 function AddingNote(){
-    var tempo = Tempo();
     ChangeContent();
-    CreateNoteOnLeft(tempo);
-    var intervalId = window.setInterval(function(){
-        var titolo = document.getElementById("titleofnote").value;
-        CreateNoteOnLeft(tempo , titolo);
-      }, 5000);
-        
+    CreateNoteOnLeft();
 }
 
 
@@ -56,10 +50,21 @@ function ChangeContent(){
     }
 }
 
-function CreateNoteOnLeft(tempo , titolo) {
+function CreateNoteOnLeft() {
     var nota = document.createElement("P"); 
     document.getElementById("notes").appendChild(nota);  
     nota.classList.add("notaonleft");
     nota.setAttribute("id" , "notaleft");
-    nota.textContent += titolo + " " + tempo;
+    let btn = document.createElement("button");
+    btn.classList.add("BtnAdd");
+    btn.innerHTML = "Salva";
+    nota.appendChild(btn);
+}
+
+function Salvataggio(){
+    var tempo = Tempo();
+    var titolo = document.getElementById("titleofnote").textContent;
+    document.getElementById("notaleft").innerHTML += (titolo + " " + tempo);
+    console.log("saved");
+    alert("NOTA SALVATA CORRETTAMENTE");
 }
