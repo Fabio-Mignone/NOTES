@@ -4,6 +4,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Josefin+Slab:ital,wght@1,500&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald&display=swap');
 
+
 /* header */
 
 .header{
@@ -25,307 +26,49 @@
                  white .08em .08em 0;
 }
 
-/* sidebar left*/
-
-.btnzone{
-  position: fixed;
-  top: 150px;
-  left: 0;
-  width: 400px;
-  height: 100%;
-  background-color: black;
-  text-align: center;
-  padding-top: 25px;
+/*note*/
+body {
+  margin: 0;
+  background: #2e2e2e;
 }
 
-/*bottoni*/
+#app {
+  position: fixed;
+  top: 100px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, 200px);
+  padding: 24px;
+  gap: 24px;
+}
 
-.BtnAdd{
-  background-color: black;
-  color: white;
-  border: 2px solid rgb(0, 255, 0);
+.note {
+  height: 200px;
+  box-sizing: border-box;
+  padding: 16px;
+  border: none;
   border-radius: 10px;
-  width: 100px;
-  height: 25px;
-  font-family: 'Prompt', sans-serif;
+  box-shadow: 0 0 7px rgba(0, 0, 0, 0.15);
+  resize: none;
+  font-family: sans-serif;
+  font-size: 16px;
 }
 
-.BtnAdd:hover{
-  background-color: rgb(0, 255, 0);
-  color: black;
-  border: 2px solid #555555;
-}
-
-.BtnRmv{
-  background-color: black;
-  color: white;
-  border: 2px solid rgb(255, 0, 0);
+.add-note {
+  height: 200px;
+  border: none;
+  outline: none;
+  background: rgba(0, 0, 0, 0.1);
   border-radius: 10px;
-  width: 100px;
-  height: 25px;
-  font-family: 'Prompt', sans-serif;
+  font-size: 120px;
+  color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  transition: background 0.2s;
 }
 
-.BtnRmv:hover{
-  background-color: rgb(255, 0, 0);
-  color: black;
-  border: 2px solid #555555;
+.add-note:hover {
+  background: rgba(0, 0, 0, 0.2);
 }
 
-.mynotes{
-  position: fixed;
-  top: 100px;
-  left: 0;
-  width: 400px;
-  height: 100%;
-  background-color: black;
-  text-align: center;
-}
-
-.mynot{
-  color: white;
-  font-family: 'Lobster', cursive;
-  text-shadow: black .05em .05em 0,
-               white .08em .08em 0;
-}
-
-.sidenav {
-    height: 100%;
-    width: 400px;
-    position: fixed;
-    top: 200px;
-    left: 0;
-    background-color: black;
-    overflow-x: hidden;
-    padding-top: 20px;
-    overflow: scroll;
-    -ms-overflow-style: none;  
-    scrollbar-width: none;
-  }
-
-.sidenav::-webkit-scrollbar{
-    display: none;
-}
-
-  /* content section */
-
-.content{
-  position: fixed;
-  width: 1120px;
-  height: 100%;
-  top: 100px;
-  left: 400px;
-  background-color: white;
-  overflow-x: hidden;
-  padding-top: 20px;
-  overflow: scroll;
-  -ms-overflow-style: none;  
-  scrollbar-width: none;
-}
-
-.content::-webkit-scrollbar{
-  display: none;
-}
-
-.Titolo{
-  position: fixed;
-  left: 50%;
-  top: 200px;
-  font-family: 'Cantata One', serif;
-}
-
-.Testo{
-  position: fixed;
-  left: 25%;
-  top: 270px;
-  font-family: 'Cantata One', serif;
-}
-
-.NoSelectedNote{
-  position: fixed;
-  top: 50%;
-  left: 36%;
-  text-align: center;  
-  font-family: 'Cantata One', serif;
-}
-
-.titolonota{
-  position: fixed;
-  top: 150px;
-  left: 45%;
-  width: auto;
-  text-align: center;
-  font-family: 'Oswald', sans-serif;
-}
-
-.testonota{
-  position: fixed;
-  top: 220px;
-  left: 23%;
-  width: 1030px;
-  height: 700px;
-  text-align: left;
-  font-family: 'Oswald', sans-serif;
-}
-
-.notaonleft{
-  background-color: rgb(75, 75, 75);
-  height: 70px;
-  width: 400px;
-  text-align: center;
-  color: white;
-  font-size: 25px;
-}
-
-/* sidebar right*/
-
-.toolsection{
-  position: fixed;
-  top: 150px;
-  right: 0px;
-  width: 400px;
-  height: 100%;
-  background-color: black;
-}
-
-.tool{
-  position: fixed;
-  top: 100px;
-  right: 0;
-  width: 400px;
-  height: 100%;
-  background-color: black;
-  text-align: center;
-}
-
-.Tooltext{
-  color: white;
-  font-family: 'Lobster', cursive;
-  text-shadow: black .05em .05em 0,
-               white .08em .08em 0;
-}
-
-/* sfondi */
-
-.sfondi{
-  position: fixed;
-  top: 150px;
-  right: 0;
-  width: 400px;
-  height: 100%;
-  background-color: black;
-  text-align: center;
-}
-
-.sfondotext{
-  color: white;
-  font-size: medium;
-  font-family: 'Prompt', sans-serif;
-}
-
-.blue{
-  float: left;
-  border: solid 4px #555555;
-  border-radius: 8px;
-  width: 20%;
-  margin-left: 10px;
-  height: 40px;
-  background-color: blue;
-  color: white;
-  text-align: center;
-}
-
-.rosso{
-  float: left;
-  border: solid 4px #555555;
-  border-radius: 8px;
-  width: 20%;
-  margin-left: 10px;
-  height: 40px;
-  background-color: red;
-  text-align: center;
-}
-
-.verde{
-  float: left;
-  border: solid 4px #555555;
-  border-radius: 8px;
-  width: 20%;
-  margin-left: 10px;
-  height: 40px;
-  background-color: green;
-  text-align: center;
-}
-
-.bianco{
-  float: left;
-  border: solid 4px #555555;
-  border-radius: 8px;
-  width: 20%;
-  margin-left: 10px;
-  height: 40px;
-  background-color: white;
-  text-align: center;
-}
-
-.arancione{
-  float: left;
-  border: solid 4px #555555;
-  border-radius: 8px;
-  width: 20%;
-  margin-left: 10px;
-  margin-top: 10px;
-  height: 40px;
-  background-color: orange;
-  text-align: center;
-}
-
-.giallo{
-  float: left;
-  border: solid 4px #555555;
-  border-radius: 8px;
-  width: 20%;
-  margin-left: 10px;
-  margin-top: 10px;
-  height: 40px;
-  background-color: yellow;
-  text-align: center;
-}
-
-.viola{
-  float: left;
-  border: solid 4px #555555;
-  border-radius: 8px;
-  width: 20%;
-  margin-left: 10px;
-  margin-top: 10px;
-  height: 40px;
-  background-color: purple;
-  text-align: center;
-}
-
-.marrone{
-  float: left;
-  border: solid 4px #555555;
-  border-radius: 8px;
-  width: 20%;
-  margin-left: 10px;
-  margin-top: 10px;
-  height: 40px;
-  background-color: black;
-  color: white;
-  text-align: center;
-}
-
-.testocolorato{
-  position: fixed;
-  right: 0;
-  top: 320px;
-  width: 400px;
-  height: 100%;
-  background-color: black;
-  text-align: center;
-}
 
 /* footer */
 

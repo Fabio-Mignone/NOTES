@@ -1,70 +1,70 @@
-$(document).ready(function() {
-    
+const notesContainer = document.getElementById("app");
+const addNoteButton = notesContainer.querySelector(".add-note");
+
+getNotes().forEach((note) => {
+  const noteElement = createNoteElement(note.id, note.content);
+  notesContainer.insertBefore(noteElement, addNoteButton);
 });
 
-function AddingNote(){
-    ChangeContent();
-    CreateNoteOnLeft();
+addNoteButton.addEventListener("click", () => addNote());
+
+function getNotes() {
+  return JSON.parse(localStorage.getItem("stickynotes-notes") || "[]");
 }
 
-
-
-function Tempo(){
-    var today = new Date();
-    var date = +today.getDate()+'-'+(today.getMonth()+1)+'-'+today.getFullYear();
-    var time = today.getHours() + ":" + today.getMinutes();
-    var dateTime = date+' '+time;
-    console.log(dateTime);
-    return dateTime;
+function saveNotes(notes) {
+  localStorage.setItem("stickynotes-notes", JSON.stringify(notes));
 }
 
-function RemovePlaceHolder(){
-    var nocontentselected = document.getElementById ("notextselected");
-    nocontentselected.remove();
-}
+function createNoteElement(id, content) {
+  const element = document.createElement("textarea");
 
-function changetext(){
-    var elementtitle = document.createElement("P");
-    document.getElementById("content").appendChild(elementtitle);
-    elementtitle.classList.add("titolonota");
-    elementtitle.setAttribute("id", "titleofnote");
-    elementtitle.textContent += "Inserisci il titolo della tua nota";
-    elementtitle.contentEditable = true;
+  element.classList.add("note");
+  element.value = content;
+  element.placeholder = "Empty Sticky Note";
 
-    var elementtext = document.createElement("P");
-    document.getElementById("content").appendChild(elementtext);
-    elementtext.classList.add("testonota");
-    elementtext.setAttribute("id", "textofnote");
-    elementtext.textContent += "Inserisci il testo della tua nota";
-    elementtext.contentEditable = true;
-}
+  element.addEventListener("change", () => {
+    updateNote(id, element.value);
+  });
 
-function ChangeContent(){
-    var placeholder = document.getElementById ("notextselected");
-    if(typeof(placeholder) != 'undefined' && placeholder != null){
-        RemovePlaceHolder();
-        changetext();
+  element.addEventListener("dblclick", () => {
+    const doDelete = confirm(
+      "Are you sure you wish to delete this sticky note?"
+    );
+
+    if (doDelete) {
+      deleteNote(id, element);
     }
-    else{
-        changetext();
-    }
+  });
+
+  return element;
 }
 
-function CreateNoteOnLeft() {
-    var nota = document.createElement("P"); 
-    document.getElementById("notes").appendChild(nota);  
-    nota.classList.add("notaonleft");
-    nota.setAttribute("id" , "notaleft");
-    let btn = document.createElement("button");
-    btn.classList.add("BtnAdd");
-    btn.innerHTML = "Salva";
-    nota.appendChild(btn);
+function addNote() {
+  const notes = getNotes();
+  const noteObject = {
+    id: Math.floor(Math.random() * 100000),
+    content: ""
+  };
+
+  const noteElement = createNoteElement(noteObject.id, noteObject.content);
+  notesContainer.insertBefore(noteElement, addNoteButton);
+
+  notes.push(noteObject);
+  saveNotes(notes);
 }
 
-function Salvataggio(){
-    var tempo = Tempo();
-    var titolo = document.getElementById("titleofnote").textContent;
-    document.getElementById("notaleft").innerHTML += (titolo + " " + tempo);
-    console.log("saved");
-    alert("NOTA SALVATA CORRETTAMENTE");
+function updateNote(id, newContent) {
+  const notes = getNotes();
+  const targetNote = notes.filter((note) => note.id == id)[0];
+
+  targetNote.content = newContent;
+  saveNotes(notes);
+}
+
+function deleteNote(id, element) {
+  const notes = getNotes().filter((note) => note.id != id);
+
+  saveNotes(notes);
+  notesContainer.removeChild(element);
 }
