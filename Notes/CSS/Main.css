@@ -27,11 +27,12 @@
 }
 
 /*note*/
+
 .notes {
   display: flex;
   position: fixed;
   top: 100px;
-  height: 100%;
+  height: 81.5%;
 }
 
 .notes * {
