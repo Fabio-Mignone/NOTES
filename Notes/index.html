@@ -8,14 +8,16 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
     </head>
     <body>
+        <div class="opacity" id="opacity">
         <section name="intestazione">
             <div class="header">
                 <h1 class="notelogo">Notes</h1>
                 <img src="Images/gear.png" onclick="Settings()" class="dropbtn" height="30px" width="30px">
                 <div id="myDropdown" class="dropdown-content">
-                    <a href="#home">Home</a>
-                    <a href="#about">About</a>
-                    <a href="#contact">Contact</a>
+                    <h4 class="textt">COLORE SFONDO/TESTO</h4>
+                    <p onclick="blck()">Bianco/nero</p>
+                    <p onclick="red()">Rosso/bianco</p>
+                    <p onclick="blue()">Blu/bianco</p>
                   </div>
             </div>
         </section>
@@ -46,6 +48,14 @@
                 <div class="textfooter2">
                     <h4 class="textft">mignofax@gmail.com<br><a class="link" target="blank" href="https://github.com/Fabio-Mignone">Profilo GitHub</a></h4>
                 </div>
+            </div>
+        </section>
+        </div>
+        <section name="introduzione" id="introduzione">
+            <div class="box" id="box">
+                 <h2 class="welcomtext" id="welcomtext">Benvenuto su Notes</h2>
+                <p class="introduction" id="introduction">Notes ti permetterà di salvare le tue note senza utilizzare nessun cloud<br>usa il bottone per creare una nuova nota e fai doppio click<br> sulla nota nella lista a sinistra per eliminarla</p>
+                <button class="btnconfirm" id="btnconfirm" onclick="understand()">Ho Capito</button>
             </div>
         </section>
     </body>

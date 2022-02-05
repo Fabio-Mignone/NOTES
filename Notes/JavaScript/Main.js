@@ -214,3 +214,22 @@ function Settings() {
       }
     }
   }
+
+function blck(){
+
+}
+
+function red(){
+
+}
+
+function blue(){
+    
+}
+
+function understand(){
+    document.getElementById("opacity").classList.remove("opacity");
+    var introduzione = document.getElementById("introduzione");
+    introduzione.removeChild(box);
+}
+
