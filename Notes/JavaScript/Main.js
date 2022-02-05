@@ -108,9 +108,9 @@ class App {
               <button class="notes__add" type="button">Aggiungi Nota</button>
               <div class="notes__list"></div>
           </div>
-          <div class="notes__preview">
-              <input class="notes__title" type="text" placeholder="Nuova Nota...">
-              <textarea class="notes__body">Testo Nota...</textarea>
+          <div class="notes__preview" id="area">
+              <input class="notes__title" type="text" id="titolo" placeholder="Nuova Nota...">
+              <textarea class="notes__body" id="testo">Testo Nota...</textarea>
           </div>
       `;
 
@@ -214,18 +214,6 @@ function Settings() {
       }
     }
   }
-
-function blck(){
-
-}
-
-function red(){
-
-}
-
-function blue(){
-    
-}
 
 function understand(){
     document.getElementById("opacity").classList.remove("opacity");
