@@ -198,23 +198,6 @@ class App {
 const root = document.getElementById("app");
 const app = new App(root);
 
-function Settings() {
-    document.getElementById("myDropdown").classList.toggle("show");
-  }
-
-  window.onclick = function(event) {
-    if (!event.target.matches('.dropbtn')) {
-      var dropdowns = document.getElementsByClassName("dropdown-content");
-      var i;
-      for (i = 0; i < dropdowns.length; i++) {
-        var openDropdown = dropdowns[i];
-        if (openDropdown.classList.contains('show')) {
-          openDropdown.classList.remove('show');
-        }
-      }
-    }
-  }
-
 function understand(){
     document.getElementById("opacity").classList.remove("opacity");
     var introduzione = document.getElementById("introduzione");
