@@ -1,25 +1,25 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Notes</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <link href="CSS/Main.css" rel="stylesheet">
-        <link rel="icon" type="image/png" href="Images/favicon.png" sizes="96x96">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    </head>
-    <body>
-        <div class="opacity" id="opacity">
-        <section name="intestazione">
+<head>
+    <title>Notes</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="CSS/Main.css" rel="stylesheet">
+    <link rel="icon" type="image/png" href="Images/favicon.png" sizes="96x96">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+    <div class="opacity" id="opacity">
+        <section name="header">
             <div class="header">
                 <h1 class="notelogo">Notes</h1>
             </div>
         </section>
-        <section name="Note">
+        <section name="Notes">
             <div class="notes" id="app">
             </div>
             <script src="JavaScript/Main.js"></script>
         </section>
-        <section name="fondopagina">
+        <section name="footer">
             <div class="footer">
                 <article id="wrap">
                     <article id="lightings">
@@ -39,17 +39,17 @@
                     <h4 class="textft">NOTES MADE BY FABIO MIGNONE<br>IN GRUGLIASCO, TURIN, ITALY</h4>
                 </div>
                 <div class="textfooter2">
-                    <h4 class="textft">mignofax@gmail.com<br><a class="link" target="blank" href="https://github.com/Fabio-Mignone">Profilo GitHub</a></h4>
+                    <h4 class="textft">mignonefabio13@gmail.com<br><a class="link" target="blank" href="https://github.com/Fabio-Mignone">GitHub Profile</a></h4>
                 </div>
             </div>
         </section>
+    </div>
+    <section name="introduction" id="introduction">
+        <div class="box" id="box">
+            <h2 class="welcomtext" id="welcomtext">Welcome to Notes</h2>
+            <p class="introduction" id="introduction">Notes will allow you to save your notes without using any cloud service.<br>Click the button to create a new note and double click on a note in the left list to delete it.</p>
+            <button class="btnconfirm" id="btnconfirm" onclick="understand()">I Understand</button>
         </div>
-        <section name="introduzione" id="introduzione">
-            <div class="box" id="box">
-                 <h2 class="welcomtext" id="welcomtext">Benvenuto su Notes</h2>
-                <p class="introduction" id="introduction">Notes ti permetterà di salvare le tue note senza utilizzare nessun cloud<br>usa il bottone per creare una nuova nota e fai doppio click<br> sulla nota nella lista a sinistra per eliminarla</p>
-                <button class="btnconfirm" id="btnconfirm" onclick="understand()">Ho Capito</button>
-            </div>
-        </section>
-    </body>
+    </section>
+</body>
 </html>
